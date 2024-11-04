@@ -27,7 +27,7 @@ body {
     padding: 0 10px;
     min-height: 100vh;
     /* background: var(--color2); */
-    background: url("/img/river3.png");
+    background: url("/img/river3.avif");
     background-size: cover;
 }
 
