@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERCOB - REGISTRAR</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <form>
+        <h2>ERCOB - REGISTRAR</h2>
+        <div action="/auth/signin" class="rows">
+            <div class="columns">
+                <div class="form-group nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group apelido">
+                    <label for="apelido">Apelido</label>
+                    <input type="text" id="apelido" placeholder="Digite seu apelido">
+                </div>
+                <div class="form-group nomecracha">
+                    <label for="nomecracha">Nome do Cracha</label>
+                    <input type="text" id="nomecracha" placeholder="Digite seu nome do cracha">
+                </div>
+                <div class="form-group cpf">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" placeholder="Digite seu CPF">
+                </div>
+                <div class="form-group email">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Digite seu email">
+                </div>
+            </div>
+            <div class="columns">
+
+                <div class="form-group telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="Digite seu telefone">
+                </div>
+
+                <div class="form-group password">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha">
+                    <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+                </div>
+
+                <div class="form-group telefone">
+                    <label for="municipio">Município / Estado</label>
+                    <input type="text" id="municipio" placeholder="Digite seu municipio / estado">
+                </div>
+
+                <div class="form-group segreh">
+                    <label for="segreh">SEGREH</label>
+                    <select id="segreh">
+                        <option value="" selected disabled>Selecione...</option>
+                        <option value="1">Comitê de Bacia - Poder Público</option>
+                        <option value="2">Comitê de Bacia - Sociedade Civil</option>
+                        <option value="3">Comitê de Bacia - Usuário</option>
+                        <option value="4">Agência de Água ou Entidade Delegatária</option>
+                        <option value="5">Conselho Estadual de Recursos Hídricos</option>
+                        <option value="6">Órgão Estadual de Recursos Hídricos</option>
+                        <option value="none">Não participa do SEGREH</option>
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="columns">
+
+            <a href="/" style="padding: 20px;">
+                <p style="text-decoration: none;">Voltar a página oficial</p>
+            </a>
+
+            <div class="form-group agree">
+                <input type="checkbox" name="concorda" id="concorda">
+                <label for="concorda" class="concorda">Autorizo a utilização destes Dados nos termos da Lei Federal nº 13.709/2018 (Lei
+                    Geral de Proteção de
+                    Dados)</label>
+            </div>
+            <div class="form-group submit-btn">
+                <input type="submit" value="Registrar">
+            </div>
+        </div>
+
+    </form>
+
+    <script type="module" src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ERCOB - Entrar</title>
+	<link rel="stylesheet" href="/css/signin.css">
+	<style>
+		.error-text {
+			color: #f33;
+			font-weight: 700;
+			font-size: 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<form action="/" id="form">
+			<h2>ENTRAR</h2>
+			<div class="input-field emaik">
+				<input type="text" id="email" required>
+				<label>Digite seu email</label>
+			</div>
+			<div class="input-field password">
+				<input type="password" id="password" required>
+				<label>Digite sua senha</label>
+			</div>
+			<div class="forget">
+				<label for="remember">
+					<input type="checkbox" id="remember">
+					<p>Lembrar mais tarde</p>
+				</label>
+				<a href="#">Esqueci a senha?</a>
+			</div>
+			<button type="submit">Log In</button>
+			<div class="register">
+				<p>Não possuo uma conta? <a href="/auth/signup">Criar</a></p>
+			</div>
+		</form>
+	</div>
+
+	<script src="/js/signin.js"></script>
+</body>
+
+</html>

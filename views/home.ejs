@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %> - HOME
+    </title>
+    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="container">
+            <div class="logos">
+                <img src="/img/logo1.png" alt="" srcset="">
+                <img src="/img/logo2.png" alt="" srcset="">
+                <img src="/img/logo3.png" alt="" srcset="">
+            </div>
+            <div class="btn-group">
+                <a href="#location">
+                    <div id="btn" class="color1">LOCAL DO EVENTO</div>
+                </a>
+                <a href="#subscribe-form">
+                    <div id="btn" class="color2">INSCREVA-SE GRATUITAMENTE</div>
+                </a>
+                <a href="#schedule">
+                    <div id="btn" class="color3">PROGRAMAÇÃO</div>
+                </a>
+
+                <% if (!token) { %>
+                    <a href="/auth/signin">
+                        <div id="btn" class="color4">Entrar</div>
+                    </a>
+
+
+                    <% } else { %>
+
+                        <a href="/auth/signout">
+                            <div id="btn" class="color4">Sair</div>
+                        </a>
+                        <% } %>
+            </div>
+        </div>
+    </section>
+
+    <section id="info1">
+        <div class="container">
+            <h2>Tranforme o Futuro das Bacias Hidrográficas do Tocantins</h2>
+
+            <h4>Participe do Seminário de Gestão das Bacias Hidrográficase contribua para a preservação e uso
+                sustentável de um dos recursos mais essenciais para o Tocantins. Nesteevento, você terá a oportunidade
+                de desenvolver estratégias e ampliar conhecimentos que farão a diferença no desenvolvimeto regional e na
+                preservação dos nossos recursos hídricos.</h4>
+
+            <div class="btn-subscribe">
+                <p>INSCREVA-SE GRATUITAMENTE</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="remain-time">
+        <h1>Tempo Restante</h1>
+
+        <div id="time">
+        </div>
+
+
+        <h3>04 à 06 de Dezembro de 2024</h3>
+    </section>
+
+    <section id="targets">
+        <h1>Conheça o Propósito do Seminário</h1>
+
+        <h3>Em um mundo cada vez mais focado em sustentabilidade, é fundamental que os gestores de bacias hidrográficas
+            estejam preparados para enfrentar os desafios ambientais e desenvolver políticas eficazes. Neste seminário,
+            você terá acesso a práticas inovadoras, aprendizado colaborativo e ferramentas que capacitam para uma gestão
+            integrada das nossas bacias hidrográficas.</h3>
+    </section>
+
+    <section id="schedule">
+        <h1>PROGRAMAÇÃO</h1>
+
+        <div class="table">
+            <div class="header">
+                <div id="item" class="item active">
+                    <p>04 / 12</p>
+                </div>
+                <div id="item" class="item">
+                    <p>05 / 12</p>
+                </div>
+                <div id="item" class="item">
+                    <p>06 / 12</p>
+                </div>
+            </div>
+            <div class="body">
+                <div id="elements" class="items active">
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>08:30 às 09:30</p>
+                            <p>Empresa Contratada</p>
+                        </div>
+                        <div class="side2 active">
+                            <h5>Credenciamento</h5>
+                            <h6>Retirada da credencial de acesso ao evento</h6>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>09:30 às 10:00</p>
+                            <p>Mauricio e Marcello Lelis</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Boas-vindas do Presidente do Fórum Nacional dos Comitês de Bacias Hidrográficas e do
+                                Secretário de Estado do Meio Ambiente e Recursos Hídricos aos participantes.</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>10:00 às 10:20</p>
+                            <p>ANA / SEMARH</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Mudanças Climáticas</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>10:20 às 10:40</p>
+                            <p>Maria Berenice Azevedo</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica dos Rios São Miguel e Vale do Guaporé</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>10:40 às 11:00</p>
+                            <p>Presidente Prof. Jair</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Formoso</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>11:00 às 11:20</p>
+                            <p>Jeferson Alberto de Lima</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Alto e Médio Machado (CBH-AMMA-RO)</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>11:20 às 11:40</p>
+                            <p>Marcelo Grison</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Lago do de Palmas</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>11:40 às 12:00</p>
+                            <p>Glauco Rodrigo Kozerski</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Jamari (CBH-JAMARI-RO)</h5>
+                        </div>
+                    </div>
+                    <div class="sep">
+                        <p>12:00 às 14:00</p>
+                        <p>ALMOÇO</p>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>14:00 às 14:30</p>
+                            <p>NATURATINS e Sec Pesca MMA</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Agenda Azul (qual o tema)</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>14:30 às 15:00</p>
+                            <p>Técnica</p>
+                        </div>
+                        <div class="side2">
+                            <h5>SIGAM - Naturatins </h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>15:00 às 15:30</p>
+                            <p>IAC / CBHRF / SEMAR</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Gestão de Alto Nível/GAM</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>15:30 às 16:00</p>
+                            <p>ANA (Implementação da cobrança) / COGERH</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Outorga /Cobrança pelo uso da água</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>16:00 às 16:30</p>
+                            <p>Agência Nacional do Recursos Hídricos e Saneamento Básico - ANA</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Experiencias exitosas de planos de bacias hidrográfica otto bacias </h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>16:30 às 17:30</p>
+                            <p>Formoso / Marcelo / Aldo / João Climaco / Fonasc</p>
+                        </div>
+                        <div class="side2">
+                            <h5>A participação da sociedade civil, usuários e poder público no sistema de gestão de
+                                recursos hídricos</h5>
+                        </div>
+                    </div>
+                    <div class="sep">
+                        <p>19:30 às 21:00</p>
+
+                        <p>ABERTURA OFICIAL</p>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>19:30 às 21:00</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Sec Meio Ambiente dos estados, Prefeitos, Deputados, Senadroes, Ministros, Governadores,
+                                Diretores, Presidentes dos fóruns nacional e estadual/Presidentes de Comitês,
+                                secretários e demais autoridades</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>21:00 às 23:00</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Coquetel de confraternização (comidas típicas)</h5>
+                            <h5>Apresentação de Grupo de Dança Sussa (Sena) e Banda Projeto Vereda (empresa contratada)
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="elements" class="items">
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>08:30 às 08:50</p>
+                            <p>Gorete Cordeiro / Mario de Sena</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Manuel Alves</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>08:50 às 09:10</p>
+                            <p>Aline dos Santos Betiolo</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica dos Rios Branco e Colorado - (CBH-RBC-RO)</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>09:10 às 09:30</p>
+                            <p>Presidente Mário Roberto</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Lontra e Corda</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>09:30 às 09:50</p>
+                            <p>Edivaldo da Silva Raiol</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê do Marapanim do Pará</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>09:50 às 10:10</p>
+                            <p>Presidente Profa. Maria Cristina</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Santo Antônio e Santa Tereza</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>10:10 às 10:30</p>
+                            <p>Presidente Prof. Otacílio</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê de Bacia Hidrográfica do Rio Palma</h5>
+                        </div>
+                    </div>
+                    <div class="sep">
+                        <p>10:30 às 10:50</p>
+
+                        <p>CAFÉ</p>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>10:50 às 11:10</p>
+                            <p>Jadson Maciel</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê da Bacia Hidrográfica do rio Tarumã-Açu
+                                Agenda ODS 6 e 4 Experiências exitosas Gestão de resíduos sólidos com inovação e
+                                tecnologia
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>11:10 às 11:30</p>
+                            <p>Maria Antônia</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Comitê Acre</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>11:30 às 11:50</p>
+                            <p>Mariana</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Fala do Estado de Roraima</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>11:50 às 12:00</p>
+                            <p>Renatta</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Fala do Estado do Amapá</h5>
+                        </div>
+                    </div>
+                    <div class="sep">
+                        <p>12:20 às 14:00</p>
+                        <p>Alomoço</p>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>14:00 às 16:00</p>
+                            <p>Ana Odália</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Experiencias exitosas de planos de bacias hidrográfica otto bacias </h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>16:00 às 16:40</p>
+                            <p>GT Minorias / Adriana</p>
+                        </div>
+                        <div class="side2">
+                            <h5>A participação da sociedade civil, usuários e poder público no sistema de gestão de
+                                recursos hídricos</h5>
+                        </div>
+                    </div>
+                    <div class="sep">
+                        <p>16:40 às 17:00</p>
+                        <p>CAFÉ</p>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>17:00</p>
+                            <p>Marcello Lelis / Mauricio</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Encerramento</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="elements" class="items">
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>VISITA I</p>
+                            <p>Quantidade de Água</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Usina Hidroelétrica/Investco</h5>
+                            <h6>Responsável - Município de Lajeado</h6>
+                        </div>
+                    </div>
+                    <div id="element" class="item other">
+                        <div class="side1">
+                            <p>VISITA II</p>
+                            <p>Qualidade da Água</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Estação de tratamento de água (ETA) BRK</h5>
+                            <h6>Responsável - Antônio Rodrigues</h5>
+                        </div>
+                    </div>
+                    <div id="element" class="item">
+                        <div class="side1">
+                            <p>VISITA III</p>
+                            <p>Produção de Água</p>
+                        </div>
+                        <div class="side2">
+                            <h5>Centro de Recuperação de Áreas Degradadas - CRAD</h5>
+                            <h6>Responsável - SEMARH Palmas</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="location">
+
+        <h1>LOCAL DO EVENTO</h1>
+
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3926.9507344095623!2d-48.3337835!3d-10.1846564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cb422198e037%3A0x8f0c02dff649b5c8!2sPal%C3%A1cio%20Araguaia%20Governador%20Jos%C3%A9%20Wilson%20Siqueira%20Campos!5e0!3m2!1spt-BR!2smz!4v1730466602346!5m2!1spt-BR!2smz"
+            width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <a href="https://www.google.com/maps/place/Pal%C3%A1cio+Araguaia+Governador+Jos%C3%A9+Wilson+Siqueira+Campos/@-10.1846564,-48.3337835,17z/data=!4m6!3m5!1s0x9324cb422198e037:0x8f0c02dff649b5c8!8m2!3d-10.1846317!4d-48.3337364!16s%2Fm%2F0y6k33h?hl=pt-br&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank">
+            <div class="btn">
+                <p>VER NO MAPS</p>
+            </div>
+        </a>
+
+    </section>
+
+    <% if(token) { %>
+
+        <section id="certification">
+            <h1>CERTIFICAÇÃO</h1>
+
+            <h4>Todos os participantes que completarem o seminário com a presença minima garantida receberão um
+                certificado
+                oficial, reconhecendo o seu compromisso com a gestão hídrica do Tocantins. Após o evento, acesse a área
+                de
+                certificado e faça o download do seu documento.</h4>
+
+            <div class="btn">
+                <p>IMPRIMIR CERTIFICADO</p>
+            </div>
+        </section>
+
+        <% } %>
+
+            <script src="/js/config.js"></script>
+            <script src="/js/subscribe.js"></script>
+
+
+</body>
+
+</html>
