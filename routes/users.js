@@ -30,13 +30,13 @@ router.get('/signout', (req, res) => {
 router.post("/signin", async (req, res) => {
     const data = req.body
 
-    await axios.post("http://127.0.0.1:4000/signin", data)
+    await axios.post("http://127.0.0.1:5000/api/login", data)
         .then((value) => {
-            switch (value.data.key) {
-                case 102:                  
+            switch (value.data.code) {
+                case 102:
                     localStorage.setItem("userToken", value.data.token)
                     res.json({ msg: "Conta logada com sucesso", code: 102 })
-                    
+
                     // res.render("home", { isLogged: true })
                     break;
                 case 200:
@@ -48,7 +48,6 @@ router.post("/signin", async (req, res) => {
                     res.json({ msg: "Dados inválidos", code: 201 })
                     break;
                 default:
-                    // res.json({ msg: "Outros" })
                     break;
             }
 
@@ -64,13 +63,29 @@ router.post("/signup", async (req, res) => {
     const data = req.body
 
     console.log(data);
-    
 
-    await axios.post("http://localhost:4000/signup", data)
+
+    await axios.post("http://localhost:5000/api/inscricoes", data)
         .then((value) => {
-            res.status(201).json({ msg: "Conta criada com sucesso", code: 100 })
+            console.log(value.data);
+
+            switch (value.data.code) {
+                case 100:
+                    console.log("Passed");
+
+                    res.status(201).json({ msg: "Inscrição criada com sucesso!", code: 100 })
+                    break;
+                case 101:
+                    console.log("CPF ou Email já cadastrado");
+                    res.json({ msg: "CPF ou Email já cadastrado", code: 101 })
+                    break;
+                default:
+                    break;
+            }
         })
         .catch((err) => {
+            console.log("BAD", err);
+
             res.status(500).json({ msg: "Servidor: Falha ao criar conta", code: 101 })
         })
 

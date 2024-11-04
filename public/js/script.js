@@ -113,8 +113,17 @@ const handleFormData = async (e) => {
 
         if (response.ok) {
             const resposta = await response.json();
+
+            console.log(resposta);
+            
             if(resposta.code == 100) {
+                console.log("All Ok");
+                
                 form.submit()
+            }
+            if(resposta.code == 101) {
+                showError(emailInput, "CPF ou Email já cadastrado")
+                showError(cpfInput, "CPF ou Email já cadastrado")
             }
             // console.log('Dados enviados com sucesso:', resposta);
         } else {
