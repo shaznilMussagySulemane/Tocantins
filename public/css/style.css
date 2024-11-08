@@ -36,7 +36,7 @@ html body {
     width: 100%;
     padding: 50px 0;
     height: 50%;
-    background-color: #051f36;
+    background-color: #fff;
     display: flex;
     justify-content: center;
   }
@@ -87,7 +87,7 @@ html body {
     background-color: var(--color3);
   }
   section#navbar .container .btn-group #btn.color4 {
-    background-color: var(--color4);
+    background-color: var(--color2);
   }
   section#info1 {
     width: 100%;
@@ -556,7 +556,7 @@ a div p {
     width: 100%;
     padding: 50px 0;
     height: 50%;
-    background-color: #051f36;
+    background-color: #fff;
     display: flex;
     justify-content: center;
   }
@@ -607,7 +607,7 @@ a div p {
     background-color: var(--color3);
   }
   section#navbar .container .btn-group #btn.color4 {
-    background-color: var(--color4);
+    background-color: var(--color2);
   }
   section#info1 {
     width: 100%;
@@ -1019,7 +1019,7 @@ a div p {
     width: 100%;
     padding: 50px 0;
     height: 50%;
-    background-color: #051f36;
+    background-color: #fff;
     display: flex;
     justify-content: center;
   }
@@ -1073,7 +1073,7 @@ a div p {
     background-color: var(--color3);
   }
   section#navbar .container .btn-group #btn.color4 {
-    background-color: var(--color4);
+    background-color: var(--color2);
   }
   section#info1 {
     width: 100%;
@@ -1492,7 +1492,7 @@ a div p {
     width: 100%;
     padding: 50px 0;
     height: 50%;
-    background-color: #051f36;
+    background-color: #fff;
     display: flex;
     justify-content: center;
   }
@@ -1549,7 +1549,7 @@ a div p {
     background-color: var(--color3);
   }
   section#navbar .container .btn-group #btn.color4 {
-    background-color: var(--color4);
+    background-color: var(--color2);
   }
   section#info1 {
     width: 100%;
