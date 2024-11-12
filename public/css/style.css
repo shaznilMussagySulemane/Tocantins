@@ -92,9 +92,9 @@ html body {
   section#info1 {
     width: 100%;
     height: 50%;
-    background-image: url("../img/river.avif");
+    background-image: url("../img/rio.avif");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
   }
